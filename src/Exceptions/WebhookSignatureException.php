@@ -1,0 +1,7 @@
+<?php
+
+namespace OxaPay\PHP\Exceptions;
+
+class WebhookSignatureException extends OxaPayException
+{
+}
