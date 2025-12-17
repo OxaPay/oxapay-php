@@ -29,14 +29,14 @@ use OxaPay\PHP\Support\Facades\OxaPay;
 // via static method
 $oxapay = new OxaPayManager(timeout: 10);
 $res = $oxapay->payment("XXXXXX-XXXXXX-XXXXXX-XXXXXX")
-              ->createInvoice([
+              ->generateInvoice([
                   'amount' => 10.5,
                   'currency' => 'USDT'
               ]);
 
 // via facade
 $res = OxaPay::payment("XXXXXX-XXXXXX-XXXXXX-XXXXXX")
-               ->createInvoice([
+               ->generateInvoice([
                    'amount' => 10.5,
                    'currency' => 'USDT'
                ]);
@@ -173,7 +173,7 @@ vendor/bin/pest
 
 ## Security
 
-If you discover a security vulnerability, please email [security@oxapay.com](mailto:security@oxapay.com).  
+If you discover a security vulnerability, please email [contact@oxapay.com](mailto:contact@oxapay.com).  
 Do not disclose publicly until it has been fixed.
 
 ## Contributing
@@ -190,11 +190,11 @@ composer test
 
 ## License
 
-Apache-2.0 — see [LICENSE](LICENSE).
+Apache-2.0 — see [LICENSE](https://github.com/OxaPay/oxapay-php/blob/HEAD/LICENSE).
 
 ## Changelog
 
-See [CHANGELOG.md](CHANGELOG.md) for version history.
+See [CHANGELOG.md](http://github.com/OxaPay/oxapay-php/blob/HEAD/CHANGELOG.md) for version history.
 
 ---
 OxaPay Made with ♥ for PHP.
